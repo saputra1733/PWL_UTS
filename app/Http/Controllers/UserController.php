@@ -9,13 +9,8 @@ class UserController extends Controller
 {
     public function index()
     {
-        $data = [
-            'nama' => 'Pelanggan Pertama',
-        ];
-        UserModel::insert('username', 'customer-1')->update($data);
-
-        // userModel::where('username', 'customer-1')->update($data);
-        $user = UserModel::all();
+        $user = UserModel::where('level_id', 2)->count();
+        dd($user);
         return view('user', ['data' => $user]);
     }
 }
