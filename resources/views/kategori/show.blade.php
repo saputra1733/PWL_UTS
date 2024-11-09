@@ -18,7 +18,11 @@
                         <td>{{ $kategori->kategori_id }}</td>
                     </tr>
                     <tr>
+<<<<<<< HEAD
                         <th>Kode</th>
+=======
+                        <th>Kategori Kode</th>
+>>>>>>> 34e93d18b8ffcb46cfbe58b58acb019f067986c6
                         <td>{{ $kategori->kategori_kode }}</td>
                     </tr>
                     <tr>
@@ -30,4 +34,12 @@
             <a href="{{ url('kategori') }}" class="btn btn-sm btn-default mt-2">Kembali</a>
         </div>
     </div>
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+@push('css')
+@endpush
+@push('js')
+@endpush
+>>>>>>> 34e93d18b8ffcb46cfbe58b58acb019f067986c6

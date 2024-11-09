@@ -2,7 +2,12 @@
 @section('content')
     <div class="card card-outline card-primary">
         <div class="card-header">
+<<<<<<< HEAD
             <h3 class="card-title">Edit Barang</h3>
+=======
+            <h3 class="card-title">{{ $page->title }}</h3>
+            <div class="card-tools"></div>
+>>>>>>> 34e93d18b8ffcb46cfbe58b58acb019f067986c6
         </div>
         <div class="card-body">
             @empty($barang)
@@ -12,19 +17,32 @@
                 </div>
                 <a href="{{ url('barang') }}" class="btn btn-sm btn-default mt-2">Kembali</a>
             @else
+<<<<<<< HEAD
                 <form method="POST" action="{{ url('/barang/'.$barang->barang_id) }}" class="form-horizontal">
                     @csrf
                     {!! method_field('PUT') !!}
+=======
+                <form method="POST" action="{{ url('/barang/' . $barang->barang_id) }}" class="form-horizontal">
+                    @csrf
+                    {!! method_field('PUT') !!} <!-- tambahkan baris ini untuk proses edit yang butuh
+                    method PUT -->
+>>>>>>> 34e93d18b8ffcb46cfbe58b58acb019f067986c6
                     <div class="form-group row">
                         <label class="col-1 control-label col-form-label">Kategori</label>
                         <div class="col-11">
                             <select class="form-control" id="kategori_id" name="kategori_id" required>
                                 <option value="">- Pilih Kategori -</option>
+<<<<<<< HEAD
                                 @foreach($kategori as $item)
                                     <option value="{{ $item->kategori_id }}" 
                                         @if($item->kategori_id == $barang->kategori_id) selected @endif>
                                         {{ $item->kategori_nama }}
                                     </option>
+=======
+                                @foreach ($kategori as $item)
+                                    <option value="{{ $item->kategori_id }}" @if ($item->kategori_id == $barang->kategori_id) selected @endif>
+                                        {{ $item->kategori_nama }}</option>
+>>>>>>> 34e93d18b8ffcb46cfbe58b58acb019f067986c6
                                 @endforeach
                             </select>
                             @error('kategori_id')
@@ -35,7 +53,12 @@
                     <div class="form-group row">
                         <label class="col-1 control-label col-form-label">Kode Barang</label>
                         <div class="col-11">
+<<<<<<< HEAD
                             <input type="text" class="form-control" name="barang_kode" value="{{ old('barang_kode', $barang->barang_kode) }}" required>
+=======
+                            <input type="text" class="form-control" id="barang_kode" name="barang_kode"
+                                value="{{ old('barang_kode', $barang->barang_kode) }}" required>
+>>>>>>> 34e93d18b8ffcb46cfbe58b58acb019f067986c6
                             @error('barang_kode')
                                 <small class="form-text text-danger">{{ $message }}</small>
                             @enderror
@@ -44,7 +67,12 @@
                     <div class="form-group row">
                         <label class="col-1 control-label col-form-label">Nama Barang</label>
                         <div class="col-11">
+<<<<<<< HEAD
                             <input type="text" class="form-control" name="barang_nama" value="{{ old('barang_nama', $barang->barang_nama) }}" required>
+=======
+                            <input type="text" class="form-control" id="barang_nama" name="barang_nama"
+                                value="{{ old('barang_nama', $barang->barang_nama) }}" required>
+>>>>>>> 34e93d18b8ffcb46cfbe58b58acb019f067986c6
                             @error('barang_nama')
                                 <small class="form-text text-danger">{{ $message }}</small>
                             @enderror
@@ -53,7 +81,12 @@
                     <div class="form-group row">
                         <label class="col-1 control-label col-form-label">Harga Beli</label>
                         <div class="col-11">
+<<<<<<< HEAD
                             <input type="number" class="form-control" name="harga_beli" value="{{ old('harga_beli', $barang->harga_beli) }}" required>
+=======
+                            <input type="text" class="form-control" id="harga_beli" name="harga_beli"
+                                value="{{ old('harga_beli', $barang->harga_beli) }}" required>
+>>>>>>> 34e93d18b8ffcb46cfbe58b58acb019f067986c6
                             @error('harga_beli')
                                 <small class="form-text text-danger">{{ $message }}</small>
                             @enderror
@@ -62,7 +95,12 @@
                     <div class="form-group row">
                         <label class="col-1 control-label col-form-label">Harga Jual</label>
                         <div class="col-11">
+<<<<<<< HEAD
                             <input type="number" class="form-control" name="harga_jual" value="{{ old('harga_jual', $barang->harga_jual) }}" required>
+=======
+                            <input type="text" class="form-control" id="harga_jual" name="harga_jual"
+                                value="{{ old('harga_jual', $barang->harga_jual) }}" required>
+>>>>>>> 34e93d18b8ffcb46cfbe58b58acb019f067986c6
                             @error('harga_jual')
                                 <small class="form-text text-danger">{{ $message }}</small>
                             @enderror
@@ -79,4 +117,12 @@
             @endempty
         </div>
     </div>
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+@push('css')
+@endpush
+@push('js')
+@endpush
+>>>>>>> 34e93d18b8ffcb46cfbe58b58acb019f067986c6

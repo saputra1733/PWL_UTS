@@ -18,11 +18,23 @@
                         <td>{{ $barang->barang_id }}</td>
                     </tr>
                     <tr>
+<<<<<<< HEAD
                         <th>Kode</th>
                         <td>{{ $barang->barang_kode }}</td>
                     </tr>
                     <tr>
                         <th>Nama</th>
+=======
+                        <th>Ketegori</th>
+                        <td>{{ $barang->kategori->kategori_nama }}</td>
+                    </tr>
+                    <tr>
+                        <th>Kode Barang</th>
+                        <td>{{ $barang->barang_kode }}</td>
+                    </tr>
+                    <tr>
+                        <th>Nama Barang</th>
+>>>>>>> 34e93d18b8ffcb46cfbe58b58acb019f067986c6
                         <td>{{ $barang->barang_nama }}</td>
                     </tr>
                     <tr>
@@ -38,4 +50,12 @@
             <a href="{{ url('barang') }}" class="btn btn-sm btn-default mt-2">Kembali</a>
         </div>
     </div>
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+@push('css')
+@endpush
+@push('js')
+@endpush
+>>>>>>> 34e93d18b8ffcb46cfbe58b58acb019f067986c6

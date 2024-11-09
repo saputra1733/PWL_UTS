@@ -9,7 +9,11 @@
             <form method="POST" action="{{ url('supplier') }}" class="form-horizontal">
                 @csrf
                 <div class="form-group row">
+<<<<<<< HEAD
                     <label class="col-1 control-label col-form-label">Kode supplier</label>
+=======
+                    <label class="col-1 control-label col-form-label">Supplier Kode</label>
+>>>>>>> 34e93d18b8ffcb46cfbe58b58acb019f067986c6
                     <div class="col-11">
                         <input type="text" class="form-control" id="supplier_kode" name="supplier_kode"
                             value="{{ old('supplier_kode') }}" required>
@@ -19,7 +23,11 @@
                     </div>
                 </div>
                 <div class="form-group row">
+<<<<<<< HEAD
                     <label class="col-1 control-label col-form-label">Nama supplier</label>
+=======
+                    <label class="col-1 control-label col-form-label">Nama Supplier</label>
+>>>>>>> 34e93d18b8ffcb46cfbe58b58acb019f067986c6
                     <div class="col-11">
                         <input type="text" class="form-control" id="supplier_nama" name="supplier_nama" value="{{ old('supplier_nama') }}"
                             required>
@@ -29,7 +37,11 @@
                     </div>
                 </div>
                 <div class="form-group row">
+<<<<<<< HEAD
                     <label class="col-1 control-label col-form-label">Alamat supplier</label>
+=======
+                    <label class="col-1 control-label col-form-label">Alamat Supplier</label>
+>>>>>>> 34e93d18b8ffcb46cfbe58b58acb019f067986c6
                     <div class="col-11">
                         <input type="text" class="form-control" id="supplier_alamat" name="supplier_alamat" value="{{ old('supplier_alamat') }}"
                             required>
