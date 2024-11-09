@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ config('app.name', 'PWL Laravel Starter Code') }}e</title>
+  <title>{{ config('app.name', 'PWL Laravel Starter Code') }}</title>
 
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -32,8 +32,8 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="{{ url('/') }}l" class="brand-link">
-      <img src="{{ url('admintle/dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+    <a href="{{ url('/') }}" class="brand-link">
+      <img src="{{ asset('adminlte/dist/img/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">PWL - Starter Code</span>
     </a>
 
@@ -50,7 +50,6 @@
     <!-- Main content -->
     <section class="content">
         @yield('content')
-
     </section>
     <!-- /.content -->
   </div>
@@ -74,12 +73,12 @@
 <script src="{{ asset('adminlte/plugins/jszip/jszip.min.js')}}"></script>
 <script src="{{ asset('adminlte/plugins/pdfmake/pdfmake.min.js')}}"></script>
 <script src="{{ asset('adminlte/plugins/pdfmake/vfs_fonts.js') }}"></script>
-<script src="{{ asset('adminlte/plugins/datatables-buttons/js/buttons.htmls.min.js')}}"></script> 
-<script src="{{ asset('adminite/plugins/datatables-buttons/js/buttons.print.min.js')}}"></script>
-<script src="{{ asset('adminlte/plugins/datatables-buttons/js/buttons.colvis.min.js')}}"></script>
+<script src="{{ asset('adminlte/plugins/datatables-buttons/js/buttons.html5.min.js')}}"></script> 
+<script src="{{ asset('adminlte/plugins/datatables-buttons/js/buttons.print.min.js')}}"></script>
+<script src="{{ asset('adminlte/plugins/datatables-buttons/js/buttons.colVis.min.js')}}"></script>
 
 <script src="{{ asset('adminlte/plugins/jquery-validation/jquery.validate.min.js')}}"></script>
-<script src="{{ asset('adminlte/plugins/jquery-validation/addtional-methods.min.js')}}"></script>
+<script src="{{ asset('adminlte/plugins/jquery-validation/additional-methods.min.js')}}"></script>
 <script src="{{ asset('adminlte/plugins/sweetalert2/sweetalert2.min.js')}}"></script>
 
 <!-- AdminLTE App -->

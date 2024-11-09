@@ -43,6 +43,12 @@
             <p>Kategori Barang</p> 
           </a> 
         </li> 
+        <li class="nav-item">
+          <a href="{{ url('/supplier') }}" class="nav-link {{ ($activeMenu == 'supplier') ? 'active' : '' }}">
+            <i class="nav-icon far fa-user"></i>
+            <p>Data Supplier</p>
+          </a>
+        </li>
         <li class="nav-item"> 
           <a href="{{ url('/barang') }}" class="nav-link {{ ($activeMenu == 
   'barang')? 'active' : '' }} "> 
