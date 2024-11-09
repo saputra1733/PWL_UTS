@@ -78,6 +78,9 @@
 <script src="{{ asset('adminite/plugins/datatables-buttons/js/buttons.print.min.js')}}"></script>
 <script src="{{ asset('adminlte/plugins/datatables-buttons/js/buttons.colvis.min.js')}}"></script>
 
+<script src="{{ asset('adminlte/plugins/jquery-validation/jquery.validate.min.js')}}"></script>
+<script src="{{ asset('adminlte/plugins/jquery-validation/addtional-methods.min.js')}}"></script>
+<script src="{{ asset('adminlte/plugins/sweetalert2/sweetalert2.min.js')}}"></script>
 
 <!-- AdminLTE App -->
 <script src="{{ url('adminlte/dist/js/adminlte.min.js') }}"></script>
