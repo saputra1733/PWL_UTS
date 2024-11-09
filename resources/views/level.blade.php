@@ -5,6 +5,7 @@
 </head>
 <body>
     <h1>Data Level Pengguna</h1>
+    <a href="/level/tambah">+ Tambah Level</a>
     <table border="1" cellpading="2" cellspacing="0">
         <tr>
             <th>ID</th>
